@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  hello-world-react-docker:
+    build:
+      context: ./
+    stdin_open: true
+    environment:
+      - LOGLEVEL=debug
+    ports:
+      - 3000:3000 
